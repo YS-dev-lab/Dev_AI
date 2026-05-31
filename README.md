@@ -2,6 +2,7 @@
 Study the basic AI models and apply to my solution
 
 AI 관련 기초 모델들을 재 정리
+
 개념을 복기시키기 위한 실험 모음
 
 
