@@ -22,6 +22,17 @@ print(\
     irisDF.groupby('target')['gmm_cluster'].value_counts())
 xynew = gmm.sample(10)
 
+'''
+
+.groupby('target')	실제 정답 레이블 기준으로 그룹 분리	그룹 기준 열 이름
+['gmm_cluster']	그 그룹 안에서 군집 열만 선택	열 이름
+.value_counts()	각 군집 번호가 몇 번 나왔는지 카운트	없음 → GMM이 실제 종류와 얼마나 일치하는지 확인
+
+'''
+
+
+
+
 n_c = np.arange(1,21)
 models=[GaussianMixture(n,\
     random_state=17).fit(iris.data) for n in n_c]
